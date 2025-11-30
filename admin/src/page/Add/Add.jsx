@@ -4,7 +4,7 @@ import { assets } from "../../assets/admin_assets/assets";
 import axios from "axios";
 import { toast } from "react-toastify";
 
-function Add() {
+function Add({url}) {
   const [image, setImage] = useState(false);
   const [data, setData] = useState({
     name: "",
@@ -12,8 +12,6 @@ function Add() {
     price: "",
     category: "Salad",
   });
-
-  const url = "http://localhost:5000";
 
   const onChangeHandler = (e) => {
     const name = e.target.name;

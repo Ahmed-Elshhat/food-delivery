@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Orders.css"
 
-function Orders() {
+function Orders({url}) {
   return (
     <div>Orders</div>
   )
